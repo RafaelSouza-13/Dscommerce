@@ -3,6 +3,8 @@ package com.rafa.dscommerce.entities;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "tb_user")
@@ -15,6 +17,8 @@ public class User {
     private String phone;
     private LocalDate birthDay;
     private String password;
+    @OneToMany(mappedBy = "user")
+    private List<Order> orders = new ArrayList<>();
 
     public User(){}
 
@@ -75,5 +79,7 @@ public class User {
         this.password = password;
     }
 
-
+    public List<Order> getOrders() {
+        return orders;
+    }
 }
