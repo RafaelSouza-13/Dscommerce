@@ -11,5 +11,6 @@ spring  e ORM para implementar suas entidades e relações.
 >[!NOTE]
 > As credenciais de acesso para o banco h2 são username: test e password: 123
 
-> host: http://localhost:8080  
-> database: http://localhost:8080/h2-console
+> `host: http://localhost:8080`
+
+> `database: http://localhost:8080/h2-console`
