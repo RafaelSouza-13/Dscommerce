@@ -18,7 +18,7 @@ public class Order {
     private Instant moment;
     private OrderStatus status;
     @ManyToOne
-    @JoinColumn(name = "client_id")
+    @JoinColumn(name = "user_id")
     private User user;
     @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
     private Payment payment;
