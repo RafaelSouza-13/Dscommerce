@@ -3,9 +3,9 @@ Dscommerce é um sistema simples de domínio que utiliza a framework
 spring  e ORM para implementar suas entidades e relações.
 
 ## Escopo do projeto
-- [x]Implementar as entidades  
-- [x]Definir suas relações  
-- [x]Alimentar o banco de dados h2
+- [x] Implementar as entidades  
+- [x] Definir suas relações  
+- [x] Alimentar o banco de dados h2
 
 ## Ambiente do projeto
 >[!NOTE]
