@@ -8,7 +8,7 @@ spring  e ORM para implementar suas entidades e relações.
 - [x]Alimentar o banco de dados h2
 
 ## Ambiente do projeto
-[!NOTE]
+>[!NOTE]
 > As credenciais de acesso para o banco h2 são username: test e password: 123
 
 > host: http://localhost:8080  
