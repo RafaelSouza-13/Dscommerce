@@ -83,6 +83,10 @@ public class User implements UserDetails {
         this.birthDate = birthDate;
     }
 
+    public boolean hasRole(String roleName){
+        return roles.stream().anyMatch(r -> r.getAuthority().equals(roleName));
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return this.roles;
@@ -143,14 +147,14 @@ public class User implements UserDetails {
         roles.add(role);
     }
 
-    public boolean hasRole(String roleName) {
-        for (Role role : roles) {
-            if (role.getAuthority().equals(roleName)) {
-                return true;
-            }
-        }
-        return false;
-    }
+//    public boolean hasRole(String roleName) {
+//        for (Role role : roles) {
+//            if (role.getAuthority().equals(roleName)) {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
 
     @Override
     public int hashCode() {
